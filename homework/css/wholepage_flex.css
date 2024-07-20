@@ -1,141 +1,91 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
-/*  design  */
-
-/*  design  */
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 .wrap {
     width: 1002px;
     margin: 0 auto;
-    font-family: Microsoft JhengHei;
+    font-family: "Microsoft JhengHei";
 }
 
 .header {
     margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
 }
 
-.header .follow {
+.follow {
     background-color: #f6f6f6;
     display: flex;
-    justify-content: end;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    justify-content: flex-end;
+    padding: 5px 10px;
 }
 
-.header .follow .Facebook {
+.Facebook {
+    padding-right: 3px;
+    border-right: 1px solid #cbcbcb;
     color: #426197;
 }
 
-.header .follow .lie {
-    color: #cbcbcb;
-    font-size: 13px;
-}
-
-.header .follow .Twitter {
+.Twitter {
     color: #0aabfb;
-    margin-right: 10px;
+    padding-left: 3px;
 }
 
-.header .menu {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
 }
 
-.header .ulmenu {
+.ulmenu {
     display: flex;
 }
 
-.header .ulmenu li {
+.ulmenu li {
     width: 100px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
-.header .ulmenu a {
+.ulmenu a {
     color: #18ce9e;
     text-decoration: none;
     display: block;
+    padding: 10px 0;
+    border-bottom: 3px solid transparent;
 }
 
-.header .ulmenu a:hover {
-    padding-bottom: 10px;
+.ulmenu a:hover {
     border-bottom: 3px solid #18ce9e;
-    /* 待解決，字會往上提 */
 }
 
-.header .banner {
-    height: 336px;
-    background: url("../img/flex/banner.png");
-    display: flex;
-    align-items: center;
+.banner {
+    position: relative;
+    height: 346px;
 }
 
-.header .banner .banner-image {
-    display: flex;
-    align-items: center;
+.banner_photo {
+    position: absolute;
+}
+
+.banner-color {
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.25);
+    top: 105px;
     width: 100%;
 }
 
-.header .banner p.banner-txt {
+.banner-txt {
     font-size: 35px;
     color: white;
     line-height: 1.1;
-    padding-left: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0 30px 20px;
 }
 
 .content {
@@ -154,28 +104,21 @@ table {
     border-bottom-left-radius: 3px;
 }
 
-.course-item h2 {
+.h2 {
     text-align: center;
     font-size: 25px;
     margin-bottom: 5px;
 }
 
-.course-item p {
-    padding-top: 5px;
-    padding-right: 15px;
-    padding-left: 10px;
+.course-content{
+    padding: 5px 15px 10px 10px;
     text-align: justify;
     line-height: 1.5;
-    margin-bottom: 10px;
 }
 
-.course-item p.jQueryp {
-    margin-bottom: 0px;
-}
-
-.course-item ul.jQuerylist {
+.jQuerylist {
     list-style-type: disc;
-    margin-left: 40px;
+    margin-left: 20px;
     line-height: 1.5;
 }
 
@@ -183,6 +126,5 @@ table {
     background: gray;
     color: #fff;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
