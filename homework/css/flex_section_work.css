@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.list li {
+    width: 300px;
+}
+
+.box-shadow {
+    box-shadow: 0px 3px 3px rgb(202, 200, 200);
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 15px 10px;
+}
+
+.list p {
+    text-align: justify;
+}
+
+.h2 {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: bold;
+}
+
+.jqurey {
+    margin-left: 20px;
+}
+
+.jqurey li {
+    list-style: square;
+}
+
+.footer {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
