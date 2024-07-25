@@ -11,12 +11,17 @@ body {
     font-family: "Castoro", serif;
     font-size: 24px;
     line-height: 1.5;
-    font-weight: 400;
-    color: #000000;
+    /* 下面兩個都是預設屬性可不用設定 */
+    /* font-weight: 400; */ 
+    /* color: #000000; */
 }
 
 img{
     display: inline-block;
+}
+
+a{
+    text-decoration: none;
 }
 
 .container {
@@ -63,6 +68,14 @@ img{
     margin-top: 40px;
 }
 
+.item_content a{
+    color: #000000;
+}
+
+.item_content a:hover{
+    color: #ff0000;
+}
+
 .year{
     color:#949494;
     font-size: 20px;
@@ -77,6 +90,10 @@ img{
 
 .icon li{
     display: inline;
+}
+
+.icon img{
+    vertical-align: middle;
 }
 
 .spacing{
