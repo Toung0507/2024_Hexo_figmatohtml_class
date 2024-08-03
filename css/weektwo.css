@@ -83,6 +83,10 @@ a{
     border-radius: 32px;
 }
 
+.contant:hover{
+    background-color: #00FFA3;
+}
+
 .introduction{
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
     padding: 160px 0px;
@@ -120,6 +124,8 @@ a{
 
 .items li{
     border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px #00000014;
+
     width: 48%;
     padding: 16px;
 }
@@ -138,10 +144,14 @@ a{
 
 .contact_me .container{
     padding: 96px 0;
+    justify-content: space-between;
+}
+
+.contact{
+    gap: 16px;
 }
 
 .icons{
-    margin-left: 113px;
     gap: 20px;
 }
 
@@ -160,7 +170,8 @@ a{
 }
 .my_projects .title{
     color: #000000;
-    margin-left: 550px;
+    width: 746px;
+    margin-left: auto;
     margin-bottom: 16px;
 }
 
@@ -186,7 +197,7 @@ a{
 }
 
 .footer{
-    padding: 40px 312px;
+    padding: 40px 0px;
     text-align: center;
     background-color: #000000;
     width: 100%;

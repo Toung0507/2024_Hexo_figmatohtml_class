@@ -11,12 +11,44 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>
-            <a href="#">Hex School</a>
-        </h1>
+    <!-- action 路徑 method方法 -->
+    <form action="try.html" method="get">
+        <label for="emailla">email</label>
+        <!-- 使用input需要有對應的label，不可只使用placeholder，for要搭配id，就可以點選label指示到相對應的輸入框 -->
+        <!-- input有很多種type，要記得一些常用，不常用submit -->
+        <input type="text" id="emailla" placeholder="input email">
+        <!-- button一定要下type，預設值是submit -->
+        <button type="submit">哈囉</button>
 
-    </div>
+        <br>
+
+        <!-- 不推薦的寫法，將input直接包在label裡面 -->
+        <label for="chicken1">
+            <input type="checkbox" value="chicken1" name="like" id="chicken1">
+            雞肉one
+        </label>
+
+        <!-- 推薦的寫法，利用for跟ID相對應 -->
+        <input type="checkbox" name="like" value="chicken2" id="chicken2">
+        <label for="chicken2">雞肉two</label>
+        <!-- 單選 -->
+        <input type="radio" name="ilike" value="牛肉" id="beef">
+        <label for="beef">牛肉</label>
+        <input type="radio" name="ilike" value="豬肉" id="pork">
+        <label for="pork">豬肉</label>
+        <input type="radio" name="ilike" value="麵" id="noodle">
+        <label for="noodle">麵</label>
+        <!-- 下拉式選單 -->
+        <label for="area">縣市</label>
+        <select name="area" id="area">
+            <option value="高雄市">高雄市</option>
+            <option value="台南市">台南市</option>
+            <option value="嘉義市">嘉義市</option>
+            <option value="台北市">台北市</option>
+        </select>
+
+
+    </form>
 
 </body>
 
