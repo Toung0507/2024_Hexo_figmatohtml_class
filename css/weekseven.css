@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap');
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Castoro", serif;
+    font-size: 24px;
+    line-height: 1.5;
+    /* 下面兩個都是預設屬性可不用設定 */
+    /* font-weight: 400; */ 
+    /* color: #000000; */
+}
+
+img{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.header {
+    font-size: 128px;
+    letter-spacing: 0.12em;
+    padding-top: 160px;
+}
+
+.photo {
+    display: block;
+    margin: 0 auto;
+}
+
+.h2{
+    text-align: right;
+}
+
+.intro{
+    background: #EFEFEF;
+}
+
+.intro p{
+    font-size: 32px;
+    margin-left: auto;
+    width: 636px;
+    padding: 48px 0;
+}
+
+.main{
+    width: 636px;
+    padding: 40px 0 160px 0;
+}
+
+.item_title{
+    border-bottom: 3px solid #AE0000;
+    color:#AE0000;
+    font-size: 40px;
+    margin-bottom: 16px;
+    margin-top: 40px;
+}
+
+.item_content a{
+    color: #000000;
+}
+
+.item_content a:hover{
+    color: #ff0000;
+}
+
+.year{
+    color:#949494;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.footer{
+    background: #000000;
+    padding: 64px 0;
+    text-align: center;
+}
+
+.icon li{
+    display: inline;
+}
+
+.icon img{
+    vertical-align: middle;
+}
+
+.spacing{
+    margin-right: 40px;
+}
+
+.mb-8{
+    margin-bottom: 8px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mb-12{
+    margin-bottom: 12px;
+}
