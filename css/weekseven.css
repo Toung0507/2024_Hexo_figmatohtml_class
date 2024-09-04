@@ -24,6 +24,10 @@ a{
     text-decoration: none;
 }
 
+.overflow-fidden{
+    overflow: hidden;
+}
+
 .container {
     width: 1296px;
     margin: 0 auto;
