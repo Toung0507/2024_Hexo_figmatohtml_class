@@ -122,6 +122,96 @@ img {
     line-height: 1.5;
 }
 
+.compare{
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    width: 844px;
+    text-align: left;
+    table-layout: fixed;
+    
+}
+.caption{
+    padding-bottom: 28px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.compare_th{
+    padding: 10px;
+    font-weight: bold;
+    background-color: #f7f7f7;
+}
+
+.compare_tr{
+    border-top: 1px solid #dcdcdc ;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.compare_td{
+    padding: 10px;
+}
+
+.mark{
+    color: #18ce9e;
+}
+
+
+.contact{
+    background:linear-gradient(#00664b,#009972) ;
+    padding: 38px 20px 30px 20px;
+}
+
+.contact_title{
+    font-size: 24px;
+    line-height: 1.5;
+    padding-bottom: 33px;
+    color: #fff;
+    text-align: center;
+}
+
+.white{
+    background-color: #fff;
+    width: 460px;
+    height: 246px;
+}
+
+.contact_content{
+    display: flex;
+    margin: 0 auto;
+    flex-basis: auto;
+    gap: 38px;
+}
+
+.contact_form{
+    width: 462px;
+    color: #fff;
+}
+
+.contact_form input,.contact_form label {
+    display: block;
+    width: 100%;
+}
+
+.contact_form input{
+    margin-top: 6px;
+    margin-bottom: 18px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.btn{
+    color: #fff;
+    border: 0px;
+    padding: 7px 18px;
+    margin-left: auto;
+    display: flex;
+    background-color: #00cc98;
+    border-radius: 3px;
+}
+
+
 .footer {
     background: gray;
     color: #fff;
